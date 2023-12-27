@@ -22,7 +22,7 @@ const Header = () => {
         
         <li className='li1'>
           <Link className="a1" to="/home">
-            <FaHome /> Accueil
+            <FaHome /> Home
           </Link>
         </li>
         <li className='li1'>
