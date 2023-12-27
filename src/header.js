@@ -32,7 +32,7 @@ const Header = () => {
         </li>
         <li className='li1'>
           <Link className="a1" to="/todo">
-          <FontAwesomeIcon icon={faRobot} /> Plan
+          Plan
           </Link>
         </li>
         <li className='li1'>
