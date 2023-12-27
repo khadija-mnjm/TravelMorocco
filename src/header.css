@@ -1,0 +1,50 @@
+/* Header.css */
+.example-image {
+  width: 13%;
+  height: 100%;
+}
+nav {
+  background-color: #8b98ff; /* Updated background color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0; /* Remove default margin */
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ecf0f1; /* Updated text color */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+button {
+  background-color: #3498db; /* Updated button background color */
+  color: #ffffff; /* Set text color to white */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #2980b9; /* Change background color on hover */
+}

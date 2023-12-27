@@ -1,0 +1,231 @@
+/* Ajoutez ces styles à votre fichier CSS ou directement dans votre composant React si vous utilisez des styles en ligne */
+
+nav {
+  background-color: #f0eaea; /* Couleur de fond de la barre de navigation */
+  padding: 10px; 
+  margin-top: 40px;
+}
+.nav1 {
+  background-color: #ffffff; /* Couleur de fond de la barre de navigation */
+  padding: 10px; 
+  margin-top: 40px;
+}
+
+.ul1 {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.li1 {
+  margin-right: 20px;
+}
+.li2 {
+  margin-right: 900px;
+  border-radius: 5px;
+  border-color:1 solid  #000000;
+}
+/* Style des liens dans la barre de navigation */
+.ul1 a {
+  text-decoration: none;
+  color: rgb(1, 12, 4); 
+  align-items: center;
+  padding-left: 100px;
+  font-size: 20px;
+}
+.touristique{
+  color: rgb(0, 27, 18);
+  padding-top: -9px;
+}
+/* Ajoutez une couleur différente au survol des liens */
+.ul1 a:hover {
+  color: #2a44ed; 
+}
+
+/* Style des icônes dans les liens */
+.ul1 svg {
+  margin-right: 5px; /* Espacement entre l'icône et le texte */
+  font-size: 18px; /* Taille de l'icône */
+}
+/* Styles pour le champ de recherche */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+  padding-right:50px ;
+  font-size: 20px;
+}
+
+.search-container input {
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid rgb(0, 26, 18)303; /* Bordure inférieure blanche */
+  background-color: transparent; /* Fond transparent */
+  color: #000000; /* Couleur du texte blanche */
+  margin-right: 5px;
+}
+
+.search-container input::placeholder {
+  color: #00250e; /* Couleur du texte de l'indicateur de champ */
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #000000; /* Couleur de l'icône blanche */
+  cursor: pointer;
+}
+.city-image {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ffffff; /* Couleur de la bordure */
+  border-radius: 10%;
+  margin-right: 10px;
+  list-style: none;
+}
+/* styles.css */
+
+.city-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-image {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ffffff;
+  border-radius: 20%;
+  margin-bottom: 5px; /* Ajout de marge en bas pour séparer l'image du nom */
+}
+
+.city-name {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center; /* Aligner le texte au centre */
+  color: #333; /* Couleur du texte */
+}
+
+.city-name:hover {
+  color: #009688; /* Couleur du texte au survol */
+}
+
+
+.button1 {
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid rgb(217, 176, 255) ;
+  padding: 1em 3em;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  margin-left: -20px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+ }
+ 
+ .button1::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+ }
+ 
+ .button1:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ .button1:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
+
+ .modal {
+  width: 450px;
+  background: linear-gradient(180deg, #f9dcf7 0%, #FFFFFF 30.21%);
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #2B2B2F;
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 13px;
+  color: #2B2B2F;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-submit-btn {
+  background-color: #b400b7;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-submit-btn:hover {
+  background-color: #f0a3ff;
+}
+
+.title1 {
+  font-family: 'Roboto', sans-serif; /* You can use a different font if you prefer */
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #833AB4; /* Instagram's brand color */
+}
+
+.title1::before {
+  content: '\f16d'; /* Unicode for the Instagram icon () */
+  font-family: 'Font Awesome 5 Brands'; /* You need to include Font Awesome for this to work */
+  margin-right: 5px;
+}

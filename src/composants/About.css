@@ -1,0 +1,34 @@
+/* About.css */
+
+.slideshow-container {
+   position: relative;
+   max-width: 100%;
+   overflow: hidden;
+ }
+ 
+ .slide {
+   display: none;
+   position: absolute;
+   width: 100%;
+   opacity: 0;
+   transition: opacity 1s ease-in-out; /* Ajout de la transition de l'opacité */
+ }
+ 
+ .slide.fade {
+   opacity: 1;
+ }
+ 
+ /* Ajout d'une animation pour le changement de slide */
+ @keyframes changeSlide {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+ 
+ .slide.change {
+   animation: changeSlide 1s ease-in-out; /* Applique l'animation au changement de slide */
+ }
+ 

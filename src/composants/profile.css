@@ -1,0 +1,71 @@
+/* profile.css */
+
+.container {
+   max-width: 600px;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #e5e5e5;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   background: #fff;
+   font-family: Arial, sans-serif;
+ }
+ 
+ .profileInfo {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+ }
+ 
+ .profilePicture {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin-right: 20px;
+   object-fit: cover;
+ }
+ 
+ .userInfo {
+   flex: 1;
+ }
+ 
+ .username {
+   margin: 0;
+   font-size: 1.2em;
+   color: #262626;
+ }
+ 
+ .bio {
+   margin: 0;
+   font-size: 0.9em;
+   color: #262626;
+ }
+ 
+ .bioTextarea {
+   width: 100%;
+   margin-top: 10px;
+   padding: 8px;
+   font-size: 0.9em;
+   border: 1px solid #dbdbdb;
+   border-radius: 4px;
+   resize: none;
+ }
+ 
+ .stats {
+   display: flex;
+   justify-content: space-around;
+   border-top: 1px solid #e5e5e5;
+   padding-top: 10px;
+   margin-top: 10px;
+   color: #262626;
+ }
+ 
+ .statItem {
+   text-align: center;
+ }
+ 
+ .editButtons {
+   margin-top: 20px;
+   text-align: center;
+ }
+ 

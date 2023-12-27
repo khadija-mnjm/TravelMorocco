@@ -1,0 +1,16 @@
+.mb-4{
+   @keyframes slideInRight {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .animated-heading {
+      animation: slideInRight 1s ease-out; /* Vous pouvez ajuster la durée et la fonction de temporisation selon vos préférences */
+    }
+}

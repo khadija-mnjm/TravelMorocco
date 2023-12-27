@@ -1,0 +1,82 @@
+/* Add your other global styles or reset styles if needed */
+
+.App {
+  font-family: 'Arial', sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+body{
+  background: url('image/page2.png') center center no-repeat;
+
+}
+.welcome {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Add Font Awesome icons to buttons */
+button.add-to-list::before {
+  content: '\f067'; /* Unicode character for plus icon */
+  font-family: 'FontAwesome';
+  margin-right: 5px;
+}
+
+button.delete-place::before {
+  content: '\f1f8'; /* Unicode character for trash icon */
+  font-family: 'FontAwesome';
+  margin-right: 5px;
+}
+
+.app2 {
+  
+  background-size: cover;
+  background-color: rgb(42, 7, 133);
+  color: #ccc;
+  border-radius: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
