@@ -6,7 +6,7 @@ import { FaHome, FaInfoCircle, FaUser,FaRobot } from 'react-icons/fa';
 import './header.css'; // Include the CSS file
 import exampleImage from './image/image3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faRobot ,faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 const Header = () => {
@@ -32,7 +32,7 @@ const Header = () => {
         </li>
         <li className='li1'>
           <Link className="a1" to="/todo">
-          <FontAwesomeIcon icon={faRobot} /> Plan
+            <FontAwesomeIcon icon={faSyncAlt} /> Plan
           </Link>
         </li>
         <li className='li1'>
