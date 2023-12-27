@@ -3,8 +3,9 @@
   width: 13%;
   height: 100%;
 }
+
 nav {
-  background-color: #8b98ff; /* Updated background color */
+  background-color: #8b98ff;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -17,7 +18,7 @@ nav {
 ul {
   list-style-type: none;
   display: flex;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 li {
@@ -26,25 +27,67 @@ li {
 
 a {
   text-decoration: none;
-  color: #ecf0f1; /* Updated text color */
-  font-weight: bold; /* Make the text bold */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: #ecf0f1;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #3498db; /* Change color on hover */
+  color: #3498db;
 }
 
 button {
-  background-color: #3498db; /* Updated button background color */
-  color: #ffffff; /* Set text color to white */
+  background-color: #3498db;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   padding: 8px 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #2980b9; /* Change background color on hover */
+  background-color: #2980b9;
+}
+
+/* Styles for the mobile navigation */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust according to your header height */
+  right: 10px;
+  background-color: #8b98ff;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.mobile-nav a {
+  color: #ecf0f1;
+  margin: 5px 0;
+}
+
+.mobile-nav a:hover {
+  color: #3498db;
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 767px) {
+  ul {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
 }

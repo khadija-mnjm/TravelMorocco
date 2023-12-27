@@ -1,5 +1,9 @@
 /* Add your other global styles or reset styles if needed */
 
+body {
+  background: url('image/page2.png') center center no-repeat;
+}
+
 .App {
   font-family: 'Arial', sans-serif;
   max-width: 1100px;
@@ -9,10 +13,7 @@
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
 }
-body{
-  background: url('image/page2.png') center center no-repeat;
 
-}
 .welcome {
   text-align: center;
   margin-bottom: 20px;
@@ -71,7 +72,6 @@ button.delete-place::before {
 }
 
 .app2 {
-  
   background-size: cover;
   background-color: rgb(42, 7, 133);
   color: #ccc;
@@ -79,4 +79,55 @@ button.delete-place::before {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 767px) {
+  .App,
+  .app2 {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .welcome {
+    font-size: 1.5em;
+  }
+
+  .container {
+    margin: 10px 0;
+  }
+
+  input {
+    padding: 5px;
+  }
+
+  button {
+    padding: 8px;
+  }
+
+  ul {
+    padding-left: 10px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Styles spécifiques aux boutons avec des icônes FontAwesome */
+  button.add-to-list::before,
+  button.delete-place::before {
+    margin-right: 2px;
+  }
+
+  /* Styles spécifiques pour .app2 sur les téléphones mobiles */
+  .app2 {
+    background-size: cover;
+    background-color: rgb(42, 7, 133);
+    color: #ccc;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
 }
